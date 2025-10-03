@@ -44,13 +44,27 @@ Fluxo construído no laboratório:
 
 📌 **Visão geral:**  
 
+<img width="1851" height="878" alt="inicio" src="https://github.com/user-attachments/assets/60725584-92bf-460a-9aaa-cecb459cead1" />
+
+
+➡️ Aqui temos a interface inicial do Workflow Studio.
+
+
+O fluxo começa em Start e termina em End.
+Podemos arrastar serviços da AWS (Lambda, SNS, DynamoDB, HTTP APIs etc.) para montar o workflow.
+À direita, é possível configurar:
+Comentário (descrição da state machine),
+TimeoutSeconds (tempo máximo da execução),
+E a linguagem de query recomendada (JSONata).
 ````
 
 Start → Lambda (Validate Account) → Choice (Valid?)
 ├── Válido → DynamoDB PutItem → End
 └── Inválido → Fail
 
+
 ````
+<img width="1834" height="869" alt="criação" src="https://github.com/user-attachments/assets/1326012d-ffef-403f-8e32-7cb4559345a4" />
 
 ---
 
@@ -122,6 +136,7 @@ Start → Lambda (Validate Account) → Choice (Valid?)
 
 O Workflow Studio fornece uma interface drag & drop para montar os
 fluxos sem precisar escrever o JSON manualmente.
+
 
 ---
 ➡️ Recursos úteis do Workflow Studio:
