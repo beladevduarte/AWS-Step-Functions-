@@ -44,10 +44,12 @@ Fluxo construído no laboratório:
 
 📌 **Visão geral:**  
 
+ ## **Workflow Studio — Tela Inicial**
+
 <img width="1851" height="878" alt="inicio" src="https://github.com/user-attachments/assets/60725584-92bf-460a-9aaa-cecb459cead1" />
 
 
-➡️ Aqui temos a interface inicial do Workflow Studio.
+Interface inicial do Workflow Studio.
 
 
 O fluxo começa em Start e termina em End.
@@ -64,7 +66,14 @@ Start → Lambda (Validate Account) → Choice (Valid?)
 
 
 ````
+## Adicionando uma Função Lambda
 <img width="1834" height="869" alt="criação" src="https://github.com/user-attachments/assets/1326012d-ffef-403f-8e32-7cb4559345a4" />
+
+Aqui eu conectei o estado Lambda Invoke ao fluxo.
+
+Essa task é responsável por chamar uma função Lambda dentro do fluxo.
+O Step Functions já adiciona automaticamente as conexões entre Start → Lambda → End.
+Essa função pode ser configurada para receber parâmetros de entrada, validar dados e devolver um resultado que será usado nos próximos estados.
 
 ---
 
